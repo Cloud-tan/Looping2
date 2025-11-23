@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+public class NestedLoop11 {
+    public static void main(String[] args) {
+        Scanner Scanner = new Scanner(System.in);
+
+        double[][] temps = new double[5][7];
+        
+        for (int i = 0; i < temps.length; i++) {
+            System.out.println("City: " + i);
+            for (int j = 0; j < temps[0].length; j++) {
+                System.out.print("Day " + (j + i) + ": ");
+                temps[i][j] = Scanner.nextDouble();
+                System.out.print(temps[i][j] + "°C ");
+                System.out.println();
+            } System.out.println();
+        }
+
+    }
+}
